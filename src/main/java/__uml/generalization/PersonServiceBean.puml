@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+DaoSupport <|-- PersonServiceBean
+
+abstract class DaoSupport {
+    delete(entity: Object): void
+    save(id: Object): void
+}
+
+
+@enduml

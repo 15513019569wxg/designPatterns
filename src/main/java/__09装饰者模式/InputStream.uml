@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.io.InputStream</OriginalElement>
+  <nodes>
+    <node x="2.0" y="608.0">java.io.DataInputStream</node>
+    <node x="0.0" y="304.0">java.io.FilterInputStream</node>
+    <node x="356.0" y="184.0">java.io.FileInputStream</node>
+    <node x="191.5" y="0.0">java.io.InputStream</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.io.FileInputStream" target="java.io.InputStream">
+      <point x="0.0" y="-187.0" />
+      <point x="519.0" y="159.0" />
+      <point x="419.5" y="159.0" />
+      <point x="76.0" y="67.0" />
+    </edge>
+    <edge source="java.io.FilterInputStream" target="java.io.InputStream">
+      <point x="0.0" y="-67.0" />
+      <point x="168.0" y="159.0" />
+      <point x="267.5" y="159.0" />
+      <point x="-76.0" y="67.0" />
+    </edge>
+    <edge source="java.io.DataInputStream" target="java.io.FilterInputStream">
+      <point x="0.0" y="-127.0" />
+      <point x="0.0" y="67.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8650793650793651" x="341.0" y="466.0" />
+  <SelectedNodes>
+    <node>java.io.DataInputStream</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>字段</Category>
+    <Category>构造函数</Category>
+    <Category>内部类</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

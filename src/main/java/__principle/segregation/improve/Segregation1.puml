@@ -1,0 +1,42 @@
+@startuml
+class principle.segregation.improve.Segregation1 {
++ {static} void main(String[])
+}
+interface principle.segregation.improve.Interface1 {
+~ void operation1()
+}
+interface principle.segregation.improve.Interface2 {
+~ void operation2()
+~ void operation3()
+}
+interface principle.segregation.improve.Interface3 {
+~ void operation4()
+~ void operation5()
+}
+class principle.segregation.improve.B {
++ void operation1()
++ void operation2()
++ void operation3()
+}
+class principle.segregation.improve.D {
++ void operation1()
++ void operation4()
++ void operation5()
+}
+class principle.segregation.improve.A {
++ void depend1(Interface1)
++ void depend2(Interface2)
++ void depend3(Interface2)
+}
+class principle.segregation.improve.C {
++ void depend1(Interface1)
++ void depend4(Interface3)
++ void depend5(Interface3)
+}
+
+
+principle.segregation.improve.Interface1 <|.. principle.segregation.improve.B
+principle.segregation.improve.Interface2 <|.. principle.segregation.improve.B
+principle.segregation.improve.Interface1 <|.. principle.segregation.improve.D
+principle.segregation.improve.Interface3 <|.. principle.segregation.improve.D
+@enduml

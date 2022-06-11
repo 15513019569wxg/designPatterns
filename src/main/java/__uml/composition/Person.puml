@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+Person o-- IdCard
+Person *-- Head
+
+
+class Person{
+    IdCard idCard
+    Head head
+}
+
+class IdCard{}
+class Head{}
+@enduml

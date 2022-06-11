@@ -1,0 +1,7 @@
+@startuml
+class __09装饰者模式.Chocolate {
+}
+
+
+__09装饰者模式.Decorator <|-- __09装饰者模式.Chocolate
+@enduml
